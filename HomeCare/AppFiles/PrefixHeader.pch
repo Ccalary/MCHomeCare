@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  HomeCare
+//
+//  Created by chh on 2017/12/25.
+//  Copyright © 2017年 chh. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import "GlobalDefine.h"
+#import "UIColor+App.h"
+
+#endif /* PrefixHeader_pch */
