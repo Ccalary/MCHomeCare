@@ -8,6 +8,7 @@
 
 #import "UserHelper.h"
 #import "ToolsHelper.h"
+static NSString *const kIsLogin = @"hcIsLogin"; //登录
 
 @implementation UserHelper
 
@@ -15,13 +16,13 @@
 //是否登录
 +(BOOL)isLogin{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *isLogin = [defaults objectForKey:@"isLogin"];
+    NSString *isLogin = [defaults objectForKey:kIsLogin];
     return [isLogin isEqualToString:@"1"];
 }
 //保存登录信息
 +(void)setLogInfo:(NSDictionary *)dic{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:@"1" forKey:@"isLogin"];//登录
+    [defaults setObject:@"1" forKey:kIsLogin];//登录
     [defaults setObject:[dic objectForKey:@"auth"] forKey:@"auth"];//auth
     [defaults setObject:[dic objectForKey:@"id"] forKey:@"userId"];//id
     [defaults setObject:[dic objectForKey:@"t"] forKey:@"RongCloudToken"];//融云token

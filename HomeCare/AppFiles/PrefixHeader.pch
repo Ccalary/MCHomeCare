@@ -11,5 +11,6 @@
 #import <UIKit/UIKit.h>
 #import "GlobalDefine.h"
 #import "UIColor+App.h"
+#import <Masonry/Masonry.h>
 
 #endif /* PrefixHeader_pch */
