@@ -16,5 +16,5 @@ pod 'IQKeyboardManager'
 pod 'KVOController'
 pod 'UITextView+Placeholder', '~> 1.2.0'
 pod 'LCActionSheet' 
-
+pod 'FMDB'
 end
