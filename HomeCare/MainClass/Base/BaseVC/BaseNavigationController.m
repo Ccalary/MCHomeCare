@@ -19,14 +19,14 @@
     
     //设置了NO之后自动下沉navigationBar的高度
     self.navigationBar.translucent = NO;
-    //改变左右Item的颜色
-    self.navigationBar.tintColor = [UIColor whiteColor];
-
-    //改变title的字体样式
-    NSDictionary *textAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName: FONT_SYSTEM_BOLD(18)};
-    [self.navigationBar setTitleTextAttributes:textAttributes];
-    //改变navBar的背景颜色
-    [self.navigationBar setBarTintColor:[UIColor themeColor]];
+//    //改变左右Item的颜色
+//    self.navigationBar.tintColor = [UIColor blackColor];
+//
+//    //改变title的字体样式
+//    NSDictionary *textAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName: FONT_SYSTEM_BOLD(18)};
+//    [self.navigationBar setTitleTextAttributes:textAttributes];
+//    //改变navBar的背景颜色
+//    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
     //处理6p上面显示不全的bug
 //    UIImage *bgImage = [[UIImage imageNamed:@"bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
 //    [self.navigationBar setBackgroundImage:bgImage forBarMetrics:UIBarMetricsDefault];

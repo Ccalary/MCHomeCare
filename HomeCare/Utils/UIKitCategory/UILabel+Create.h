@@ -9,5 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (Create)
-+ (UILabel *)createNormalLabelWithText:(NSString *)text;
+/**
+ 创建常规label，默认字体15,居左
+ 
+ @param text text
+ @param color 颜色
+ @return label
+ */
++ (UILabel *)createNormalLabelWithText:(NSString *)text color:(UIColor *)color;
+/**
+ 创建局中label，默认字体15,居中
+
+ @param text text
+ @param color 颜色
+ @return label
+ */
++ (UILabel *)createCenterLabelWithText:(NSString *)text color:(UIColor *)color;
 @end

@@ -42,6 +42,9 @@
 		FE5C1D7D1FF32AC8003F0122 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C1D7C1FF32AC8003F0122 /* Connect.m */; };
 		FE5C1D801FF32CB8003F0122 /* HCConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C1D7F1FF32CB8003F0122 /* HCConnect.m */; };
 		FE5C1D841FF32F2B003F0122 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C1D821FF32F2B003F0122 /* BaseTableView.m */; };
+		FE5E75081FF7731000BBD463 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5E75071FF7731000BBD463 /* HomeCollectionViewCell.m */; };
+		FE5E750C1FF77F7600BBD463 /* HomeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5E750B1FF77F7600BBD463 /* HomeCollectionHeaderView.m */; };
+		FE5E750F1FF7839200BBD463 /* UIView+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5E750E1FF7839200BBD463 /* UIView+Create.m */; };
 		FEEBBF291FF0F99200CDB40B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBBF281FF0F99200CDB40B /* AppDelegate.m */; };
 		FEEBBF2F1FF0F99200CDB40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEBBF2D1FF0F99200CDB40B /* Main.storyboard */; };
 		FEEBBF311FF0F99200CDB40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEEBBF301FF0F99200CDB40B /* Assets.xcassets */; };
@@ -128,6 +131,12 @@
 		FE5C1D7F1FF32CB8003F0122 /* HCConnect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCConnect.m; sourceTree = "<group>"; };
 		FE5C1D821FF32F2B003F0122 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		FE5C1D831FF32F2B003F0122 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		FE5E75061FF7731000BBD463 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		FE5E75071FF7731000BBD463 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		FE5E750A1FF77F7600BBD463 /* HomeCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionHeaderView.h; sourceTree = "<group>"; };
+		FE5E750B1FF77F7600BBD463 /* HomeCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionHeaderView.m; sourceTree = "<group>"; };
+		FE5E750D1FF7839200BBD463 /* UIView+Create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Create.h"; sourceTree = "<group>"; };
+		FE5E750E1FF7839200BBD463 /* UIView+Create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Create.m"; sourceTree = "<group>"; };
 		FEEBBF241FF0F99200CDB40B /* HomeCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEBBF271FF0F99200CDB40B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEEBBF281FF0F99200CDB40B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -186,6 +195,8 @@
 		0DDB40551FF28755005F7777 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FE5E75091FF77F3800BBD463 /* View */,
+				FE5E75051FF772FC00BBD463 /* Cell */,
 				0DDB40561FF28766005F7777 /* HomeViewController.h */,
 				0DDB40571FF28766005F7777 /* HomeViewController.m */,
 			);
@@ -208,6 +219,8 @@
 				0DDB40601FF28B98005F7777 /* UILabel+Create.m */,
 				0DDB40621FF28CE6005F7777 /* UIButton+Create.h */,
 				0DDB40631FF28CE6005F7777 /* UIButton+Create.m */,
+				FE5E750D1FF7839200BBD463 /* UIView+Create.h */,
+				FE5E750E1FF7839200BBD463 /* UIView+Create.m */,
 			);
 			path = UIKitCategory;
 			sourceTree = "<group>";
@@ -346,6 +359,24 @@
 				FE5C1D821FF32F2B003F0122 /* BaseTableView.m */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		FE5E75051FF772FC00BBD463 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E75061FF7731000BBD463 /* HomeCollectionViewCell.h */,
+				FE5E75071FF7731000BBD463 /* HomeCollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FE5E75091FF77F3800BBD463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E750A1FF77F7600BBD463 /* HomeCollectionHeaderView.h */,
+				FE5E750B1FF77F7600BBD463 /* HomeCollectionHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FEEBBF1B1FF0F99200CDB40B = {
@@ -636,8 +667,10 @@
 				FE5C1D5D1FF328A3003F0122 /* NSBundle+TZImagePicker.m in Sources */,
 				FEEBBF551FF0FD0900CDB40B /* UIImage+fixOrientation.m in Sources */,
 				FE5C1D691FF328A3003F0122 /* TZProgressView.m in Sources */,
+				FE5E75081FF7731000BBD463 /* HomeCollectionViewCell.m in Sources */,
 				FEEBBF6A1FF0FE6100CDB40B /* BaseNavigationController.m in Sources */,
 				FE5C1D761FF328F1003F0122 /* HHAlertController.m in Sources */,
+				FE5E750C1FF77F7600BBD463 /* HomeCollectionHeaderView.m in Sources */,
 				FE5C1D261FF32311003F0122 /* BaseModel.m in Sources */,
 				FE5C1D791FF328F1003F0122 /* SendCodeButton.m in Sources */,
 				FEEBBF5D1FF0FD4500CDB40B /* UserHelper.m in Sources */,
@@ -645,6 +678,7 @@
 				FE5C1D801FF32CB8003F0122 /* HCConnect.m in Sources */,
 				FE5C1D3E1FF32832003F0122 /* PhotoHelper.m in Sources */,
 				0DDB405D1FF289F1005F7777 /* LoginViewController.m in Sources */,
+				FE5E750F1FF7839200BBD463 /* UIView+Create.m in Sources */,
 				0DDB40641FF28CE6005F7777 /* UIButton+Create.m in Sources */,
 				FE5C1D361FF325DB003F0122 /* HHRefreshNormalHeader.m in Sources */,
 				FE5C1D771FF328F1003F0122 /* HHPopSelectView.m in Sources */,
